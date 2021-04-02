@@ -18,6 +18,17 @@
     .verticalLine {
         border-left: thick solid #0058ab;
 }
+.service-photos:hover{
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+  transition: 0.4s;
+}
+.service-container{
+  margin-top:100px;
+}
+
+
 h3{
     font-size:25px;
 }
@@ -46,7 +57,7 @@ h3{
                 <div class="rd-navbar-panel">
                   <!-- RD Navbar Toggle-->
                   <button class="rd-navbar-toggle" data-rd-navbar-toggle="#rd-navbar-nav-wrap"><span></span></button>
-                  <!-- RD Navbar Brand--><a class="rd-navbar-brand" href="index.html"><img src="../static/Images/logo.png" alt="" width="140" height="22"/></a>
+                  <!-- RD Navbar Brand--><a class="rd-navbar-brand" href="index.html"><img src="../static/Images/logo.png" alt="" width="80" height="18"/></a>
                 </div>
                 <div class="rd-navbar-main-element">
                   <div class="rd-navbar-nav-wrap" id="rd-navbar-nav-wrap">
@@ -135,6 +146,79 @@ h3{
         <div class="container">
           <h3 data-aos="fade-right">Services</h3>
           <p data-aos="fade-right"><span class="text-width-1">As the most qualified financial services provider, we offer an amazing variety of financial solutions designed to help you solve all bookkeeping issues, no matter big or small.</span></p>
+
+          <div class="container service-container">
+            <div class="row mt-5">
+              <div class="col-md-4 col-sm-12 col-lg-4" data-aos="fade-right">
+                <div class="row">
+                  <div class="col-md-3 col-sm-12 col-lg-3">
+                    <img src="../static/Images/profit.png" alt="profit" class="service-photos">
+                  </div>
+                  <div class="col-md-9 col-sm-12 col-lg-9" style="text-align:left;">
+                    <p style="font-weight:600;font-size:20px;color:#4a90e2;">Construction Equipment Finance</p>
+                    <p>Construction Equipment Loans help you buy new or used machinery without collaterals in an easy and simple way. You can purchase any kind of Construction machines through this loan.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-12 col-lg-4" data-aos="fade-right">
+                <div class="row">
+                  <div class="col-md-3 col-sm-12 col-lg-3">
+                    <img src="../static/Images/finance.png" alt="profit" class="service-photos">
+                  </div>
+                  <div class="col-md-9 col-sm-12 col-lg-9" style="text-align:left;">
+                    <p style="font-weight:600;font-size:20px;color:#4a90e2;">Commercial Vehicle Finance</p>
+                    <p>Commercial Vehicle Loans help you buy new or used commercial vehicle without collaterals in an easy and simple way. You can purchase any kind of Commercial Vehicles through this loan.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-12 col-lg-4" data-aos="fade-right">
+                <div class="row">
+                  <div class="col-md-3 col-sm-12 col-lg-3">
+                    <img src="../static/Images/asset.png" alt="profit" class="service-photos">
+                  </div>
+                  <div class="col-md-9 col-sm-12 col-lg-9" style="text-align:left;">
+                    <p style="font-weight:600;font-size:20px;color:#4a90e2;">Asset Insurance</p>
+                    <p>Asset insurance covers all your assets against sudden and accidental damage.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mt-5">
+                <div class="col-md-4 col-sm-12 col-lg-4" data-aos="fade-right">
+                  <div class="row">
+                    <div class="col-md-3 col-sm-12 col-lg-3">
+                      <img src="../static/Images/commercial.png" alt="profit" class="service-photos">
+                    </div>
+                    <div class="col-md-9 col-sm-12 col-lg-9" style="text-align:left;">
+                      <p style="font-weight:600;font-size:20px;color:#4a90e2;">Asset Sell & Purchase for Commercial & Construction Equipment</p>
+                      <p>We act as a mediator to sell and purchase new or used commercial Vehicles or Construction Equipments. We help our customers to complete the transaction with a transparency process.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-lg-4" data-aos="fade-right">
+                  <div class="row">
+                    <div class="col-md-3 col-sm-12 col-lg-3">
+                      <img src="../static/Images/diamond.png" alt="profit" class="service-photos">
+                    </div>
+                    <div class="col-md-9 col-sm-12 col-lg-9" style="text-align:left;">
+                      <p style="font-weight:600;font-size:20px;color:#4a90e2;">Structure Funding</p>
+                      <p>Structured Fund is one type of fund that combines both equity and fixed-income products to provide investors with a degree of both capital protection and capital appreciation</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-lg-4" data-aos="fade-right">
+                  <div class="row">
+                    <div class="col-md-3 col-sm-12 col-lg-3">
+                      <img src="../static/Images/piggy.png" alt="profit" class="service-photos">
+                    </div>
+                    <div class="col-md-9 col-sm-12 col-lg-9" style="text-align:left;">
+                      <p style="font-weight:600;font-size:20px;color:#4a90e2;">Fund Based / Non Fund Based</p>
+                      <p>We provide Fund Based & Non Fund Based facilities to our customer by the banks or Non Banking Financial Institutions.</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
           <div class="row" id="1">
               <div class="col-md-3 col-lg-3 col-sm-12">
 
@@ -455,6 +539,7 @@ h3{
     
     <!-- Global Mailform Output-->
     <div class="snackbars" id="form-output-global"></div>
+    <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
