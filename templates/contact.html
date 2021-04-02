@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <title>Services</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width height=device-height initial-scale=1.0 maximum-scale=1.0 user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/cdn-cgi/apps/head/3ts2ksMwXvKRuG480KNifJ2_JNM.js"></script><link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Work+Sans:300,700,800%7COswald:300,400,500">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/style.css" id="main-styles-link">
+    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}
+    .verticalLine {
+        border-left: thick solid #0058ab;
+}
+h3{
+    font-size:25px;
+}
+  </style>
+  </head>
+  <body>
+    <div class="ie-panel"><a href="https://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <div class="preloader">
+      <div class="preloader-logo"><img src="../static/Images/logo.png" alt="" width="140" height="22"/>
+      </div>
+      <div class="preloader-body">
+        <div id="loadingProgressG">
+          <div class="loadingProgressG" id="loadingProgressG_1"></div>
+        </div>
+      </div>
+    </div>
+    <div class="page">
+      <!-- Page Header-->
+      <header class="section page-header">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-minimal rd-navbar-minimal-wide" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-fixed" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <!-- RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                  <!-- RD Navbar Toggle-->
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <!-- RD Navbar Brand--><a class="rd-navbar-brand" href="{{url_for('home')}}"><img src="../static/Images/logo.png" alt="" width="140" height="22"/></a>
+                </div>
+                <div class="rd-navbar-main-element">
+                  <div class="rd-navbar-nav-wrap">
+                    <ul class="rd-navbar-nav">
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="{{url_for('home')}}" style="color:#0058ab;">Home</a>
+                       
+                      </li>
+                      
+                      
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="{{url_for('services')}}" style="color:#0058ab;">Services</a>
+                      </li>
+                     
+                      
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="{{url_for('contact')}}" style="color:gray;">Contact Us</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- RD Navbar Search-->
+                  <!-- <div class="rd-navbar-search" id="rd-navbar-search">
+                    <button class="rd-navbar-search-toggle rd-navbar-fixed-element-2" data-rd-navbar-toggle="#rd-navbar-search"><span></span></button>
+                    <form class="rd-search" action="search-results.html" data-search-live="rd-search-results-live" method="GET">
+                      <div class="form-wrap">
+                        <label class="form-label" for="rd-navbar-search-form-input">Search...</label>
+                        <input class="form-input rd-navbar-search-form-input" id="rd-navbar-search-form-input" type="text" name="s" autocomplete="off">
+                        <div class="rd-search-results-live" id="rd-search-results-live"></div>
+                      </div>
+                      <button class="rd-search-form-submit fa-search" type="submit"></button>
+                    </form>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- Breadcrumbs-->
+      <section class="breadcrumbs-custom bg-image context-dark" style="background-image: url(../static/Images/contact.jpg);">
+        <div class="breadcrumbs-custom-inner">
+          <div class="breadcrumbs-custom-container container">
+            <div class="breadcrumbs-custom-main">
+              <h6 class="breadcrumbs-custom-subtitle title-decorated" style="color:#0058ab;">Contact Us</h6>
+              <h1 class="breadcrumbs-custom-title" style="color:#0058ab;">Contact Us</h1>
+            </div>
+            <ul class="breadcrumbs-custom-path">
+              <li><a href="{{url_for('home')}}" style="color:#0058ab;">Home</a></li>
+              <li class="active" style="color:#0058ab;">Contact Us</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section section-sm">
+        <div class="container">
+          <div class="layout-bordered">
+            <div class="layout-bordered-item wow-outer">
+              <div class="layout-bordered-item-inner wow slideInUp">
+                <div class=" text-primary"><i class="fa fa-2x fa-phone" aria-hidden="true"></i></div>
+                <ul class="list-0">
+                  <li><a class="link-default" href="tel:#">+800 49 900 900</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="layout-bordered-item wow-outer">
+              <div class="layout-bordered-item-inner wow slideInUp">
+                <div class="text-primary"><i class="fa fa-2x fa-envelope-o" aria-hidden="true"></i></div>
+                <div><a class="link-default" href="mailto:#">info@visllp.com</a></div>
+              </div>
+            </div>
+            <div class="layout-bordered-item wow-outer">
+              <div class="layout-bordered-item-inner wow slideInUp">
+                <div class="text-primary"><i class="fa fa-2x fa-map-marker" aria-hidden="true"></i></div>
+                <div ><a class="link-default" href="#" >A/802-B, West Gate, YMCA Club, S.G. Highway,<br> GJ 380054 IN.
+                    VRUNDAVAN INFRASOLUTIONS LLP</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section bg-gray-100">
+        <div class="range justify-content-xl-between">
+          <div class="cell-xl-6 align-self-center container">
+            <div class="row">
+              <div class="col-lg-9 cell-inner">
+                <div class="section-lg">
+                  <h3 class="wow-outer"><span class="wow slideInDown">Contact Us</span></h3>
+                  <!-- RD Mailform-->
+                  <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post">
+                    <div class="row row-10">
+                      <div class="col-md-6 wow-outer">
+                        <div class="form-wrap wow fadeSlideInUp">
+                          <label class="form-label-outside" for="contact-first-name">First Name</label>
+                          <input class="form-input" id="contact-first-name" type="text" name="name" data-constraints="@Required">
+                        </div>
+                      </div>
+                      <div class="col-md-6 wow-outer">
+                        <div class="form-wrap wow fadeSlideInUp">
+                          <label class="form-label-outside" for="contact-last-name">Last Name</label>
+                          <input class="form-input" id="contact-last-name" type="text" name="name" data-constraints="@Required">
+                        </div>
+                      </div>
+                      <div class="col-md-6 wow-outer">
+                        <div class="form-wrap wow fadeSlideInUp">
+                          <label class="form-label-outside" for="contact-email">E-mail</label>
+                          <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Required @Email">
+                        </div>
+                      </div>
+                      <div class="col-md-6 wow-outer">
+                        <div class="form-wrap wow fadeSlideInUp">
+                          <label class="form-label-outside" for="contact-phone">Phone</label>
+                          <input class="form-input" id="contact-phone" type="text" name="phone" data-constraints="@Required @PhoneNumber">
+                        </div>
+                      </div>
+                      <div class="col-12 wow-outer">
+                        <div class="form-wrap wow fadeSlideInUp">
+                          <label class="form-label-outside" for="contact-message">Your Message</label>
+                          <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="group group-middle">
+                      <div class="wow-outer"> 
+                        <button class="button button-primary button-winona wow slideInRight" type="submit">Send Message</button>
+                      </div>                     
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cell-xl-5 height-fill wow fadeIn">
+            <div class="google-map-container" data-marker="images/gmap_marker.png" data-marker-active="images/gmap_marker_active.png" data-styles="[{&quot;featureType&quot;:&quot;water&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#e9e9e9&quot;},{&quot;lightness&quot;:17}]},{&quot;featureType&quot;:&quot;landscape&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#f5f5f5&quot;},{&quot;lightness&quot;:20}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#ffffff&quot;},{&quot;lightness&quot;:17}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;geometry.stroke&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#ffffff&quot;},{&quot;lightness&quot;:29},{&quot;weight&quot;:0.2}]},{&quot;featureType&quot;:&quot;road.arterial&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#ffffff&quot;},{&quot;lightness&quot;:18}]},{&quot;featureType&quot;:&quot;road.local&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#ffffff&quot;},{&quot;lightness&quot;:16}]},{&quot;featureType&quot;:&quot;poi&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#f5f5f5&quot;},{&quot;lightness&quot;:21}]},{&quot;featureType&quot;:&quot;poi.park&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#dedede&quot;},{&quot;lightness&quot;:21}]},{&quot;elementType&quot;:&quot;labels.text.stroke&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;on&quot;},{&quot;color&quot;:&quot;#ffffff&quot;},{&quot;lightness&quot;:16}]},{&quot;elementType&quot;:&quot;labels.text.fill&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:36},{&quot;color&quot;:&quot;#333333&quot;},{&quot;lightness&quot;:40}]},{&quot;elementType&quot;:&quot;labels.icon&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;transit&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#f2f2f2&quot;},{&quot;lightness&quot;:19}]},{&quot;featureType&quot;:&quot;administrative&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#fefefe&quot;},{&quot;lightness&quot;:20}]},{&quot;featureType&quot;:&quot;administrative&quot;,&quot;elementType&quot;:&quot;geometry.stroke&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#fefefe&quot;},{&quot;lightness&quot;:17},{&quot;weight&quot;:1.2}]}]" data-zoom="5" data-x="-73.9874068" data-y="40.643180">
+              <div class="google-map"></div>
+              <ul class="google-map-markers">
+                <li data-location="9870 St Vincent Place, Glasgow, DC 45 Fr 45." data-description="9870 St Vincent Place, Glasgow"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Page Footer-->
+      <footer class="section footer-standard bg-gray-700">
+        <div class="footer-standard-main">
+          <div class="container">
+            <div class="row row-50">
+              <div class="col-lg-4">
+                <div class="inset-right-1">
+                  <h4>About Us</h4>
+                  <p>We Vrundavan Infra Solutions LLP providing the best and secure mode of payment transfer system for players and stakeholders including infrastructure and real estate companies, contractors, consultants, bank, rental agencies, brokers SMEs and individual business owners.</p>
+                </div>
+              </div>
+              <div class="col-sm-5 col-lg-4">
+                <div class="box-1">
+                  <h4>Contact Information</h4>
+                  <ul class="list-sm">
+                    <li class="object-inline"><i class="fa fa-map-marker" aria-hidden="true"></i><a class="link-default" href="#">A/802-B, West Gate, YMCA Club, S.G. Highway,<br> GJ 380054 IN.
+                      VRUNDAVAN INFRASOLUTIONS LLP</a></li>
+                    <li class="object-inline"><i class="fa fa-phone" aria-hidden="true"></i><a class="link-default" href="tel:#">+800 49 900 900</a></li>
+                    <li class="object-inline"><i class="fa fa-envelope-o" aria-hidden="true"></i><a class="link-default" href="mailto:#">info@visllp.com</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-7 col-lg-4">
+                <h4>Newsletter</h4>
+                <p>Sign up to our newsletter and be the first to know about the latest news, special offers, events, and discounts.</p>
+                <!-- RD Mailform-->
+                <form class="rd-form rd-mailform form-inline" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
+                  <div class="form-wrap">
+                    <input class="form-input" id="subscribe-form-4-email" type="email" name="email" data-constraints="@Required @Email">
+                    <label class="form-label" for="subscribe-form-4-email">E-mail</label>
+                  </div>
+                  <div class="form-button">
+                    <button class="button button-primary button-icon button-icon-only button-winona" type="submit" aria-label="submit"><span class="icon mdi mdi-email-outline"></span></button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="footer-standard-aside"><a class="brand" href="{{url_for('home')}}"><img src="../static/Images/logo.png" alt="" width="140" height="22"/></a>
+            <!-- Rights-->
+            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>All Rights Reserved.</span><span>&nbsp;</span><br class="d-sm-none"/><a href="#">Privacy Policy</a></p>
+          </div>
+        </div>
+      </footer>
+</div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init({
+    offset: 240,
+    duration: 1000
+});
+</script>
+
+<!-- Global Mailform Output-->
+<div class="snackbars" id="form-output-global"></div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- Javascript-->
+<script src="../static/js/script1.js"></script>
+<script src="../static/js/script2.js"></script>
+    
+    </body>
+</html>
