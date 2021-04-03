@@ -1,0 +1,342 @@
+
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <title>Vehicle Finance</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width height=device-height initial-scale=1.0 maximum-scale=1.0 user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/cdn-cgi/apps/head/3ts2ksMwXvKRuG480KNifJ2_JNM.js"></script><link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Work+Sans:300,700,800%7COswald:300,400,500">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/style.css" id="main-styles-link">
+    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}
+    .verticalLine {
+        border-left: thick solid #0058ab;
+}
+.service-photos:hover{
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+  transition: 0.4s;
+}
+.service-container{
+  margin-top:100px;
+}
+.social-icons{
+    font-size:40px;
+    color:white;
+    margin-right:20px;
+}
+.social-icons:hover{
+    color:#0058ab;
+}
+
+
+h3{
+    font-size:25px;
+}
+  </style>
+  </head>
+  <body>
+    <div class="ie-panel"><a href="https://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <div class="preloader">
+      <div class="preloader-logo"><img src="../static/Images/logo.png" alt="" width="260" height="50"/>
+      </div>
+      <div class="preloader-body">
+        <div id="loadingProgressG">
+          <div class="loadingProgressG" id="loadingProgressG_1"></div>
+        </div>
+      </div>
+    </div>
+    <div class="page">
+      <!-- Page Header-->
+      <header class="section page-header">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-minimal" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <!-- RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                  <!-- RD Navbar Toggle-->
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle="#rd-navbar-nav-wrap"><span></span></button>
+                  <!-- RD Navbar Brand--><a class="rd-navbar-brand" href="index.html"><img src="../static/Images/logo.png" alt="" width="80" height="18"/></a>
+                </div>
+                <div class="rd-navbar-main-element">
+                  <div class="rd-navbar-nav-wrap" id="rd-navbar-nav-wrap">
+                    <ul class="rd-navbar-nav">
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="{{url_for('home')}}" style="color:#0058ab;">Home</a>
+                      </li>
+                     
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="{{url_for('services')}}"  style="color:#0058ab;">Services</a>
+                      </li>
+
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="{{url_for('equipment')}}"  style="color:#0058ab;">Equipment Finance</a>
+                      </li>
+
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="{{url_for('vehicle')}}"  style="color:gray;">Vehicle Finance</a>
+                      </li>
+                    
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="{{url_for('contact')}}" style="color:#0058ab;">Contact Us</a>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <section class="breadcrumbs-custom bg-image context-dark" style="background-image: url(../static/Images/equipmentf.jpg);">
+        <div class="breadcrumbs-custom-inner">
+          <div class="breadcrumbs-custom-container container">
+            <div class="breadcrumbs-custom-main">
+              <h6 class="breadcrumbs-custom-subtitle title-decorated" style="color:#0058ab;font-weight:500;">Vehicle Finance</h6>
+              <h1 class="breadcrumbs-custom-title" style="color:#0058ab;font-weight:600;">Vehicle Finance</h1>
+            </div>
+            <ul class="breadcrumbs-custom-path">
+              <li><a href="{{url_for('home')}}" style="color:#0058ab;font-weight:600;">Home</a></li>
+              <li class="active" style="color:#0058ab;font-weight:600;">Vehicle Finance</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <h2 style="font-weight:600;color:black;text-align:center;margin-top:70px;font-size:30px;font-family:sans-serif;" data-aos="fade-right">New Vehicles</h2>
+        <hr data-aos="fade-right" style="text-align:center;border:2px solid #0058ba;width:120px;" class="mb-4 mt-2" style="margin-bottom:80px;">
+        <div class="row">
+          <div class="col-md-3 col-sm-12 col-lg-3" style="margin-top:50px;" data-aos="fade-right">
+            <p style="font-size:14px;">WE HELP YOU IN A BETTER WAY!</p>
+            <h4 style="color:black;font-weight:600;">New Vehicles</h4>
+            <p style="font-size:14px;">We help you to get a quick loan on Construction Equipment & Commercial Vehicle!</p>
+            <p style="font-size:14px;">We offer Machinery Loans at simple eligibility criteria and minimal documentation. Please contact us if you would like to avail any kind of Construction Equipment loan for your Infrastructure.</p>
+          </div>
+          <div class="col-md-9 col-sm-12 col-lg-9">
+            <div class="row">
+              <div class="col-md-4 col-sm-12 col-lg-4" data-aos="fade-right">
+                <img src="../static/Images/NV-1.png" alt="Tipper" class="service-photos">
+                <div class="verticalLine">
+                <h5 style="color:#0058ab;margin-left:20px;font-weight:600;">Tipper</h5>
+              </div>
+              </div>
+              <div class="col-md-4 col-sm-12 col-lg-4" data-aos="fade-right">
+                <img src="../static/Images/NV-2.png" alt="Tractor" class="service-photos">
+                <div class="verticalLine">
+                <h5 style="color:#0058ab;margin-left:20px;font-weight:600;">Tractor</h5>
+              </div>
+              </div>
+              <div class="col-md-4 col-sm-12 col-lg-4" data-aos="fade-right">
+                <img src="../static/Images/NV-3.png" alt="Dump Truck" class="service-photos">
+                <div class="verticalLine">
+                <h5 style="color:#0058ab;margin-left:20px;font-weight:600;">Dump Truck</h5>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-md-12 col-sm-12 col-lg-12">
+              <div class="row">
+                <div class="col-md-3 col-sm-12 col-lg-3" data-aos="fade-right">
+                  <img src="../static/Images/NV-4.png" alt="BUS" class="service-photos">
+                  <div class="verticalLine">
+                  <h5 style="color:#0058ab;margin-left:20px;font-weight:600;">BUS</h5>
+                </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-lg-3" data-aos="fade-right">
+                  <img src="../static/Images/NV-5.png" alt="Flatbad Truck" class="service-photos">
+                  <div class="verticalLine">
+                  <h5 style="color:#0058ab;margin-left:20px;font-weight:600;">Flatbad Truck</h5>
+                </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-lg-3" data-aos="fade-right">
+                  <img src="../static/Images/NV-6.png" alt="Garbage Truck" class="service-photos">
+                  <div class="verticalLine">
+                  <h5 style="color:#0058ab;margin-left:20px;font-weight:600;">Garbage Truck</h5>
+                </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-lg-3" data-aos="fade-right">
+                  <img src="../static/Images/NV-7.png" alt="Mini Truck" class="service-photos">
+                  <div class="verticalLine">
+                  <h5 style="color:#0058ab;margin-left:20px;font-weight:600;">Mini Truck</h5>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-md-12 col-sm-12 col-lg-12">
+              <div class="row">
+                <div class="col-md-3 col-sm-12 col-lg-3" data-aos="fade-right">
+                  <img src="../static/Images/NV-8.png" alt="Tank Truck" class="service-photos">
+                  <div class="verticalLine">
+                  <h5 style="color:#0058ab;margin-left:20px;font-weight:600;">Tank Truck</h5>
+                </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-lg-3" data-aos="fade-right">
+                  <img src="../static/Images/NV-9.png" alt="Trailer" class="service-photos">
+                  <div class="verticalLine">
+                  <h5 style="color:#0058ab;margin-left:20px;font-weight:600;">Trailer</h5>
+                </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-lg-3" data-aos="fade-right">
+                  <img src="../static/Images/NV-10.png" alt="Van" class="service-photos">
+                  <div class="verticalLine">
+                  <h5 style="color:#0058ab;margin-left:20px;font-weight:600;">Van</h5>
+                </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" style="margin-top:150px;">
+        <h2 style="font-weight:600;color:black;text-align:center;margin-top:10px;font-size:30px;font-family:sans-serif;" data-aos="fade-right">Used Vehicles</h2>
+        <hr style="text-align:center;border:2px solid #0058ba;width:120px;" class="mb-4 mt-2" data-aos="fade-right" style="margin-bottom:80px;">
+        <div class="row">
+          <div class="col-md-3 col-sm-12 col-lg-3" style="margin-top:10px;" data-aos="fade-right">
+            <p style="font-size:14px;">WE HELP YOU IN A BETTER WAY!</p>
+            <h4 style="color:black;font-weight:600;">Used Vehicles</h4>
+            <p style="font-size:14px;">We help you to get a quick loan on Construction Equipment & Commercial Vehicle!</p>
+            <p style="font-size:14px;">We offer Machinery Loans at simple eligibility criteria and minimal documentation. Please contact us if you would like to avail any kind of Construction Equipment loan for your Infrastructure.</p>
+          </div>
+          <div class="col-md-9 col-sm-12 col-lg-9">
+            <div class="row">
+              <div class="col-md-4 col-sm-12 col-lg-4" data-aos="fade-right">
+                <img src="../static/Images/UV-1.png" alt="Box Truck" class="service-photos">
+                <div class="verticalLine">
+                <h5 style="color:#0058ab;margin-left:20px;font-weight:600;margin-top:30px;">Box Truck</h5>
+              </div>
+              </div>
+              <div class="col-md-4 col-sm-12 col-lg-4" data-aos="fade-right">
+                <img src="../static/Images/UV-2.png" alt="BUS" class="service-photos">
+                <div class="verticalLine">
+                <h5 style="color:#0058ab;margin-left:20px;font-weight:600;margin-top:30px;">BUS</h5>
+              </div>
+              </div>
+              <div class="col-md-4 col-sm-12 col-lg-4" data-aos="fade-right">
+                <img src="../static/Images/UV-3.png" alt="Dumper" class="service-photos">
+                <div class="verticalLine">
+                <h5 style="color:#0058ab;margin-left:20px;font-weight:600;margin-top:30px;">Dumper</h5>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="row" style="margin-top:100px;">
+            <div class="col-md-12 col-sm-12 col-lg-12">
+              <div class="row">
+                <div class="col-md-3 col-sm-12 col-lg-3" data-aos="fade-right">
+                  <img src="../static/Images/UV-4.png" alt="Heavy Commercial Vehicle" class="service-photos">
+                  <div class="verticalLine">
+                  <h5 style="color:#0058ab;margin-left:20px;font-weight:600;margin-top:30px;">Heavy Commercial Vehicle</h5>
+                </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-lg-3" data-aos="fade-right">
+                  <img src="../static/Images/UV-5.png" alt="Small Commercial Vehicle" class="service-photos">
+                  <div class="verticalLine">
+                  <h5 style="color:#0058ab;margin-left:20px;font-weight:600;margin-top:30px;">Small Commercial Vehicle</h5>
+                </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-lg-3" data-aos="fade-right">
+                  <img src="../static/Images/UV-6.png" alt="Truck" class="service-photos">
+                  <div class="verticalLine">
+                  <h5 style="color:#0058ab;margin-left:20px;font-weight:600;margin-top:30px;">Truck</h5>
+                </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-lg-3" data-aos="fade-right">
+                  <img src="../static/Images/UV-7.png" alt="Van" class="service-photos">
+                  <div class="verticalLine">
+                  <h5 style="color:#0058ab;margin-left:20px;font-weight:600;margin-top:30px;">Van</h5>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+       <!-- Page Footer-->
+       <footer class="section footer-standard bg-gray-700">
+        <div class="footer-standard-main">
+          <div class="container">
+            <div class="row row-50">
+              <div class="col-lg-4">
+                  <div class="row">
+                <div class="inset-right-1">
+                  <img src="../static/Images/logo.png" alt="logo" height="200" width="200">
+                </div>
+            </div>
+            <div class="row">
+                <i class="fa fa-2x fa-facebook-official social-icons" aria-hidden="true"></i>
+                <i class="fa fa-2x fa-twitter-square social-icons" aria-hidden="true"></i>
+                <i class="fa fa-2x fa-instagram social-icons" aria-hidden="true"></i>
+                <i class="fa fa-2x fa-linkedin-square social-icons" aria-hidden="true"></i>
+            </div>
+              </div>
+              <div class="col-sm-5 col-lg-4">
+                <div class="box-1">
+                  <h4>Contact Information</h4>
+                  <ul class="list-sm">
+                    <li class="object-inline"><i class="fa fa-map-marker" aria-hidden="true"></i><a class="link-default" href="#">A/802-B, West Gate, YMCA Club, S.G. Highway,<br> GJ 380054 IN.
+                      VRUNDAVAN INFRASOLUTIONS LLP</a></li>
+                    <li class="object-inline"><i class="fa fa-phone" aria-hidden="true"></i><a class="link-default" href="tel:#">+800 49 900 900</a></li>
+                    <li class="object-inline"><i class="fa fa-envelope-o" aria-hidden="true"></i><a class="link-default" href="mailto:#">info@visllp.com</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-7 col-lg-4">
+                <h4>Newsletter</h4>
+                <p>Sign up to our newsletter and be the first to know about the latest news, special offers, events, and discounts.</p>
+                <!-- RD Mailform-->
+                <form class="rd-form rd-mailform form-inline" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
+                  <div class="form-wrap">
+                    <input class="form-input" id="subscribe-form-4-email" type="email" name="email" data-constraints="@Required @Email">
+                    <label class="form-label" for="subscribe-form-4-email">E-mail</label>
+                  </div>
+                  <div class="form-button">
+                    <button class="button button-primary button-icon button-icon-only button-winona" type="submit" aria-label="submit"><span class="icon mdi mdi-email-outline"></span></button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="footer-standard-aside">
+            <!-- Rights-->
+            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>All Rights Reserved.</span><span>&nbsp;</span><br class="d-sm-none"/><a href="#">Privacy Policy</a></p>
+          </div>
+        </div>
+      </footer>
+</div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init({
+    offset: 240,
+    duration: 1000
+});
+</script>
+
+<!-- Global Mailform Output-->
+<div class="snackbars" id="form-output-global"></div>
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- Javascript-->
+<script src="../static/js/script1.js"></script>
+<script src="../static/js/script2.js"></script>
+</body>
+</html>

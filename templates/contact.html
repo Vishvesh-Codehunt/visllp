@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
   <head>
-    <title>Services</title>
+    <title>Contact Us</title>
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width height=device-height initial-scale=1.0 maximum-scale=1.0 user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,6 +17,15 @@
     .verticalLine {
         border-left: thick solid #0058ab;
 }
+.social-icons{
+    font-size:40px;
+    color:white;
+    margin-right:20px;
+}
+.social-icons:hover{
+    color:#0058ab;
+}
+
 h3{
     font-size:25px;
 }
@@ -25,7 +34,7 @@ h3{
   <body>
     <div class="ie-panel"><a href="https://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
     <div class="preloader">
-      <div class="preloader-logo"><img src="../static/Images/logo.png" alt="" width="140" height="22"/>
+      <div class="preloader-logo"><img src="../static/Images/logo.png" alt="" width="260" height="50"/>
       </div>
       <div class="preloader-body">
         <div id="loadingProgressG">
@@ -45,7 +54,7 @@ h3{
                 <div class="rd-navbar-panel">
                   <!-- RD Navbar Toggle-->
                   <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
-                  <!-- RD Navbar Brand--><a class="rd-navbar-brand" href="{{url_for('home')}}"><img src="../static/Images/logo.png" alt="" width="140" height="22"/></a>
+                  <!-- RD Navbar Brand--><a class="rd-navbar-brand" href="{{url_for('home')}}"><img src="../static/Images/logo.png" alt="" width="80" height="18"/></a>
                 </div>
                 <div class="rd-navbar-main-element">
                   <div class="rd-navbar-nav-wrap">
@@ -57,7 +66,10 @@ h3{
                       
                       <li class="rd-nav-item"><a class="rd-nav-link" href="{{url_for('services')}}" style="color:#0058ab;">Services</a>
                       </li>
-                     
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="{{url_for('equipment')}}" style="color:#0058ab;">Equipment Finance</a>
+                      </li>
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="{{url_for('vehicle')}}"  style="color:#0058ab;">Vehicle Finance</a>
+                      </li>
                       
                       <li class="rd-nav-item"><a class="rd-nav-link" href="{{url_for('contact')}}" style="color:gray;">Contact Us</a>
                       </li>
@@ -86,12 +98,12 @@ h3{
         <div class="breadcrumbs-custom-inner">
           <div class="breadcrumbs-custom-container container">
             <div class="breadcrumbs-custom-main">
-              <h6 class="breadcrumbs-custom-subtitle title-decorated" style="color:#0058ab;">Contact Us</h6>
-              <h1 class="breadcrumbs-custom-title" style="color:#0058ab;">Contact Us</h1>
+              <h6 class="breadcrumbs-custom-subtitle title-decorated" style="color:#0058ab;font-weight:600;">Contact Us</h6>
+              <h1 class="breadcrumbs-custom-title" style="color:#0058ab;font-weight:600;">Contact Us</h1>
             </div>
             <ul class="breadcrumbs-custom-path">
-              <li><a href="{{url_for('home')}}" style="color:#0058ab;">Home</a></li>
-              <li class="active" style="color:#0058ab;">Contact Us</li>
+              <li><a href="{{url_for('home')}}" style="color:#0058ab;font-weight:600;">Home</a></li>
+              <li class="active" style="color:#0058ab;font-weight:600;">Contact Us</li>
             </ul>
           </div>
         </div>
@@ -191,8 +203,17 @@ h3{
             <div class="row row-50">
               <div class="col-lg-4">
                 <div class="inset-right-1">
-                  <h4>About Us</h4>
-                  <p>We Vrundavan Infra Solutions LLP providing the best and secure mode of payment transfer system for players and stakeholders including infrastructure and real estate companies, contractors, consultants, bank, rental agencies, brokers SMEs and individual business owners.</p>
+                  <div class="row">
+                    <div class="inset-right-1">
+                      <img src="../static/Images/logo.png" alt="logo" height="200" width="200">
+                    </div>
+                </div>
+                <div class="row">
+                    <i class="fa fa-2x fa-facebook-official social-icons" aria-hidden="true"></i>
+                    <i class="fa fa-2x fa-twitter-square social-icons" aria-hidden="true"></i>
+                    <i class="fa fa-2x fa-instagram social-icons" aria-hidden="true"></i>
+                    <i class="fa fa-2x fa-linkedin-square social-icons" aria-hidden="true"></i>
+                </div>
                 </div>
               </div>
               <div class="col-sm-5 col-lg-4">

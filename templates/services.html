@@ -24,8 +24,17 @@
   transform: scale(1.1); 
   transition: 0.4s;
 }
+.social-icons:hover{
+    color:#0058ab;
+}
+
 .service-container{
   margin-top:100px;
+}
+.social-icons{
+    font-size:40px;
+    color:white;
+    margin-right:20px;
 }
 
 
@@ -65,7 +74,13 @@ h3{
                       <li class="rd-nav-item"><a class="rd-nav-link" href="{{url_for('home')}}" style="color:#0058ab;">Home</a>
                       </li>
                      
-                      <li class="rd-nav-item active"><a class="rd-nav-link" href="services.html"  style="color:gray;">Services</a>
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="{{url_for('services')}}"  style="color:gray;">Services</a>
+                      </li>
+
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="{{url_for('equipment')}}"  style="color:#0058ab;">Equipment Finance</a>
+                      </li>
+
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="{{url_for('vehicle')}}"  style="color:#0058ab;">Vehicle Finance</a>
                       </li>
                     
                       <li class="rd-nav-item"><a class="rd-nav-link" href="{{url_for('contact')}}" style="color:#0058ab;">Contact Us</a>
@@ -84,12 +99,12 @@ h3{
         <div class="breadcrumbs-custom-inner">
           <div class="breadcrumbs-custom-container container">
             <div class="breadcrumbs-custom-main">
-              <h6 class="breadcrumbs-custom-subtitle title-decorated" style="color:#0058ab;">Services</h6>
-              <h1 class="breadcrumbs-custom-title" style="color:#0058ab;">Services</h1>
+              <h6 class="breadcrumbs-custom-subtitle title-decorated" style="color:#0058ab;font-weight:500;">Services</h6>
+              <h1 class="breadcrumbs-custom-title" style="color:#0058ab;font-weight:500;">Services</h1>
             </div>
             <ul class="breadcrumbs-custom-path">
-              <li><a href="{{url_for('home')}}" style="color:#0058ab;">Home</a></li>
-              <li class="active" style="color:#0058ab">Services</li>
+              <li><a href="{{url_for('home')}}" style="color:#0058ab;font-weight:500;">Home</a></li>
+              <li class="active" style="color:#0058ab;font-weight:500;">Services</li>
             </ul>
           </div>
         </div>
@@ -316,137 +331,8 @@ h3{
             </div>
           </div>
           <!-- <div class="row" id="1">
-           
-        
-      
-        </div>
-        <div class="row" id="7">
-            <div class="col-md-3 col-lg-3 col-sm-12">
-
-         
-        </div>
-        <div class="row" id="9">
-           
-            <div class="col-md-3 col-lg-3 col-sm-12">
-
-
-        <div class="row" id="11">
-            <div class="col-md-3 col-lg-3 col-sm-12">
-
-            </div>
-            <div class="col-md-6 col-lg-6 col-sm-12 mt-4" data-aos="fade-right">
-                <h3 style="color:#0058ab;text-align:left;">Repo stock liquidation</h3>
-                <div class="verticalLine">
-                  <p style="text-align:left;margin-left:20px;margin-top:30px;">Being having the team of the construction equipment and commercial vehicle industry, we have an extensive customer network and we cater the requirement of their used assets requirements. This way we can provide effective solutions to the financial institution in liquidating their stock of repossessed assets on the quick and beneficial terms.</p>
-                </div>
-          </div>
-            <div class="col-md-3 col-lg-3 col-sm-12">
-                
-          </div>
-        </div>
-        </div> -->
-      </section>
-      <!-- <section class="section section-xl bg-gray-700 bg-image bg-image-1" style="background-image: url(images/call-to-action-2-1920x584.jpg);">
-        <div class="container">
-          <div class="row justify-content-sm-end">
-            <div class="col-sm-9 col-md-7 col-lg-6">
-              <div class="box-2">
-                <div class="wow-outer">
-                  <div class="wow slideInUp">
-                    <h4>Take the First Step to the</h4>
-                    <h3 class="font-weight-bold">Success of Your Company</h3>
-                  </div>
-                </div>
-                <div class="wow-outer offset-top-4">
-                  <div class="wow slideInDown">
-                    <p>We can make your company the leader of the market by providing high quality business management solutions. Schedule an appointment to find out more.</p><a class="button button-primary button-winona" href="#">Make an Appointment</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-      <!-- Testimonials-->
-      <!-- <section class="section section-lg">
-        <div class="container">
-          <h3 class="text-center">Testimonials</h3>
-          <div class="owl-carousel" data-items="1" data-md-items="2" data-dots="true" data-nav="false" data-loop="true" data-margin="30" data-stage-padding="0" data-mouse-drag="false">
-            <div class="wow-outer">
-              <blockquote class="quote-modern quote-modern-big wow slideInLeft">
-                <svg class="quote-modern-mark" x="0px" y="0px" width="35px" height="25px" viewbox="0 0 35 25">
-                  <path d="M27.461,10.206h7.5v15h-15v-15L25,0.127h7.5L27.461,10.206z M7.539,10.206h7.5v15h-15v-15L4.961,0.127h7.5                L7.539,10.206z"></path>
-                </svg>
-                <div class="quote-modern-text">
-                  <p>I was impressed by the quality of what your specialists did. They quickly found out what was the main problem of my company and helped me to form a correct strategy.</p>
-                </div>
-                <div class="quote-modern-meta">
-                  <div class="quote-modern-avatar"><img src="images/testimonials-person-3-96x96.jpg" alt="" width="96" height="96"/>
-                  </div>
-                  <div class="quote-modern-info">
-                    <cite class="quote-modern-cite">Albert Webb</cite>
-                    <p class="quote-modern-caption">CEO at Majestic</p>
-                  </div>
-                </div>
-              </blockquote>
-            </div>
-            <div class="wow-outer">
-              <blockquote class="quote-modern quote-modern-big wow slideInLeft">
-                <svg class="quote-modern-mark" x="0px" y="0px" width="35px" height="25px" viewbox="0 0 35 25">
-                  <path d="M27.461,10.206h7.5v15h-15v-15L25,0.127h7.5L27.461,10.206z M7.539,10.206h7.5v15h-15v-15L4.961,0.127h7.5                L7.539,10.206z"></path>
-                </svg>
-                <div class="quote-modern-text">
-                  <p>I appreciate what you’ve done to help my small company develop and thrive in that market niche that we specialize in. Your business consulting experts are the best!</p>
-                </div>
-                <div class="quote-modern-meta">
-                  <div class="quote-modern-avatar"><img src="images/testimonials-person-1-96x96.jpg" alt="" width="96" height="96"/>
-                  </div>
-                  <div class="quote-modern-info">
-                    <cite class="quote-modern-cite">Kelly McMillan</cite>
-                    <p class="quote-modern-caption">Private Entrepreneur</p>
-                  </div>
-                </div>
-              </blockquote>
-            </div>
-            <div class="wow-outer">
-              <blockquote class="quote-modern quote-modern-big wow slideInLeft">
-                <svg class="quote-modern-mark" x="0px" y="0px" width="35px" height="25px" viewbox="0 0 35 25">
-                  <path d="M27.461,10.206h7.5v15h-15v-15L25,0.127h7.5L27.461,10.206z M7.539,10.206h7.5v15h-15v-15L4.961,0.127h7.5                L7.539,10.206z"></path>
-                </svg>
-                <div class="quote-modern-text">
-                  <p>My cooperation with your team helped me understand that you really care about your clients – it was proved by a lot of positive reviews already – and that's why I chose you.</p>
-                </div>
-                <div class="quote-modern-meta">
-                  <div class="quote-modern-avatar"><img src="images/testimonials-person-2-96x96.jpg" alt="" width="96" height="96"/>
-                  </div>
-                  <div class="quote-modern-info">
-                    <cite class="quote-modern-cite">Harold Barnett</cite>
-                    <p class="quote-modern-caption">Regional Manager</p>
-                  </div>
-                </div>
-              </blockquote>
-            </div>
-            <div class="wow-outer">
-              <blockquote class="quote-modern quote-modern-big wow slideInLeft">
-                <svg class="quote-modern-mark" x="0px" y="0px" width="35px" height="25px" viewbox="0 0 35 25">
-                  <path d="M27.461,10.206h7.5v15h-15v-15L25,0.127h7.5L27.461,10.206z M7.539,10.206h7.5v15h-15v-15L4.961,0.127h7.5                L7.539,10.206z"></path>
-                </svg>
-                <div class="quote-modern-text">
-                  <p>Your team's extensive high-level analytical, budgeting and forecasting skills, gave me better visibility and understanding of business processes and performance. Thank you!</p>
-                </div>
-                <div class="quote-modern-meta">
-                  <div class="quote-modern-avatar"><img src="images/testimonials-person-4-96x96.jpg" alt="" width="96" height="96"/>
-                  </div>
-                  <div class="quote-modern-info">
-                    <cite class="quote-modern-cite">Samantha Lee</cite>
-                    <p class="quote-modern-caption">Sales Manager at Hillplan</p>
-                  </div>
-                </div>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-      </section> -->
+          
+          
       <!-- Page Footer-->
             <footer class="section footer-standard bg-gray-700">
               <div class="footer-standard-main">
@@ -454,8 +340,17 @@ h3{
                   <div class="row row-50">
                     <div class="col-lg-4">
                       <div class="inset-right-1">
-                        <h4>About Us</h4>
-                        <p>We Vrundavan Infra Solutions LLP providing the best and secure mode of payment transfer system for players and stakeholders including infrastructure and real estate companies, contractors, consultants, bank, rental agencies, brokers SMEs and individual business owners.</p>
+                        <div class="row">
+                          <div class="inset-right-1">
+                            <img src="../static/Images/logo.png" alt="logo" height="200" width="200">
+                          </div>
+                      </div>
+                      <div class="row">
+                          <i class="fa fa-2x fa-facebook-official social-icons" aria-hidden="true"></i>
+                          <i class="fa fa-2x fa-twitter-square social-icons" aria-hidden="true"></i>
+                          <i class="fa fa-2x fa-instagram social-icons" aria-hidden="true"></i>
+                          <i class="fa fa-2x fa-linkedin-square social-icons" aria-hidden="true"></i>
+                      </div>
                       </div>
                     </div>
                     <div class="col-sm-5 col-lg-4">

@@ -24,7 +24,16 @@
   .hdfc{
     margin-top:20%;
   }
-    
+  .social-icons:hover{
+    color:#0058ab;
+}
+
+  .social-icons{
+    font-size:40px;
+    color:white;
+    margin-right:20px;
+}
+
     </style>
   </head>
   <body>
@@ -62,6 +71,12 @@
                         
                         
                         <li class="rd-nav-item"><a class="rd-nav-link" href="{{url_for('services')}}" style="color:#0058ab;">Services</a>
+                        </li>
+
+                        <li class="rd-nav-item active"><a class="rd-nav-link" href="{{url_for('equipment')}}"  style="color:#0058ab;">Equipment Finance</a>
+                        </li>
+
+                        <li class="rd-nav-item active"><a class="rd-nav-link" href="{{url_for('vehicle')}}"  style="color:#0058ab;">Vehicle Finance</a>
                         </li>
                        
                         
@@ -333,256 +348,7 @@
         </div>
       </section>
       <!-- Testimonials & Video-->
-      <!-- <section class="section section-lg bg-gray-100">
-        <div class="container">
-         <h3 class="wow-outer text-center"><span class="wow slideInUp">Testimonials & Video</span></h3>
-          <div class="row row-50 justify-content-center justify-content-lg-between">
-            <div class="col-md-10 col-lg-5 wow-outer">
-              <div class="owl-carousel wow slideInLeft" data-items="1" data-dots="true" data-nav="false" data-loop="true" data-margin="30" data-stage-padding="0" data-mouse-drag="false">
-                <blockquote class="quote-modern">
-                  <svg class="quote-modern-mark" x="0px" y="0px" width="35px" height="25px" viewbox="0 0 35 25">
-                    <path d="M27.461,10.206h7.5v15h-15v-15L25,0.127h7.5L27.461,10.206z M7.539,10.206h7.5v15h-15v-15L4.961,0.127h7.5                L7.539,10.206z"></path>
-                  </svg>
-                  <div class="quote-modern-text">
-                    <p>I am proud to personally recommend the services of CaseCraft to an organization seeking a top-notch partner who can deploy effective outbound communication campaigns quickly and efficiently. They were extremely easy to work with in all aspects of my campaign.</p>
-                  </div>
-                  <div class="quote-modern-meta">
-                    <div class="quote-modern-avatar"><img src="images/testimonials-person-3-96x96.jpg" alt="" width="96" height="96"/>
-                    </div>
-                    <div class="quote-modern-info">
-                      <cite class="quote-modern-cite">Albert Webb</cite>
-                      <p class="quote-modern-caption">CEO at Majestic</p>
-                    </div>
-                  </div>
-                </blockquote>
-                <blockquote class="quote-modern">
-                  <svg class="quote-modern-mark" x="0px" y="0px" width="35px" height="25px" viewbox="0 0 35 25">
-                    <path d="M27.461,10.206h7.5v15h-15v-15L25,0.127h7.5L27.461,10.206z M7.539,10.206h7.5v15h-15v-15L4.961,0.127h7.5                L7.539,10.206z"></path>
-                  </svg>
-                  <div class="quote-modern-text">
-                    <p>I have been working with CaseCraft for the past few months and they have accomplished an extraordinary effort in executing our Campaign and have delivered their skills and abilities to meet our promised, targets. They have shown their excellence in providing top-notch support.</p>
-                  </div>
-                  <div class="quote-modern-meta">
-                    <div class="quote-modern-avatar"><img src="images/testimonials-person-1-96x96.jpg" alt="" width="96" height="96"/>
-                    </div>
-                    <div class="quote-modern-info">
-                      <cite class="quote-modern-cite">Kelly McMillan</cite>
-                      <p class="quote-modern-caption">Private Entrepreneur</p>
-                    </div>
-                  </div>
-                </blockquote>
-                <blockquote class="quote-modern">
-                  <svg class="quote-modern-mark" x="0px" y="0px" width="35px" height="25px" viewbox="0 0 35 25">
-                    <path d="M27.461,10.206h7.5v15h-15v-15L25,0.127h7.5L27.461,10.206z M7.539,10.206h7.5v15h-15v-15L4.961,0.127h7.5                L7.539,10.206z"></path>
-                  </svg>
-                  <div class="quote-modern-text">
-                    <p>I just wanted to thank your customer service representative who contacted me twice regarding my order status. He left me a second message today with detailed information. I never had this superb customer service from any other companies before.</p>
-                  </div>
-                  <div class="quote-modern-meta">
-                    <div class="quote-modern-avatar"><img src="images/testimonials-person-2-96x96.jpg" alt="" width="96" height="96"/>
-                    </div>
-                    <div class="quote-modern-info">
-                      <cite class="quote-modern-cite">Harold Barnett</cite>
-                      <p class="quote-modern-caption">Regional Manager</p>
-                    </div>
-                  </div>
-                </blockquote>
-              </div>
-            </div>
-            <div class="col-md-10 col-lg-6 wow-outer">
-              <div class="thumbnail-video-1 bg-gray-700 wow slideInLeft">
-                <div class="embed-responsive embed-responsive-16by9">
-                  <iframe width="570" height="320" src="about:blank" data-src="//www.youtube.com/embed/QZzbm-FrkGk" allowfullscreen=""></iframe>
-                </div>
-                <div class="thumbnail-video__overlay video-overlay" style="background-image: url(images/video-preview-1-570x320.jpg)">
-                  <div class="button-video"></div>
-                  <h5>Lawrence Alvarado</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      -->
-       
-      <!-- CTA Thin-->
-      <!-- <section class="section section-xs bg-primary-darker text-center">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-sm-10 col-md-12">
-              <div class="box-cta-thin">
-                <h4 class="wow-outer"><span class="wow slideInRight">Learn the Cost of Personalized <span class="font-weight-bold">Customer Support Service</span> Now!</span></h4>
-                <div class="wow-outer button-outer"><a class="button button-primary button-winona wow slideInLeft" href="pricing.html">View all pricing</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-      <!-- Our Team-->
-      <!-- <section class="section section-lg text-center">
-        <div class="container">
-          <h3 class="wow-outer"><span class="wow slideInUp">Our Team</span></h3>
-          <div class="row row-50 justify-content-center">
-            <div class="col-sm-6 col-md-5 col-lg-3 wow-outer">
-        
-              <article class="profile-classic wow slideInLeft">
-                <div class="profile-classic-main"><img class="profile-classic-image" src="images/team-1-270x273.jpg" alt="" width="270" height="273"/>
-                  <div class="profile-classic-caption">
-                    <div class="group group-xs group-middle"><a class="icon icon-sm icon-creative mdi mdi-facebook" href="#"></a><a class="icon icon-sm icon-creative mdi mdi-twitter" href="#"></a><a class="icon icon-sm icon-creative mdi mdi-instagram" href="#"></a><a class="icon icon-sm icon-creative mdi mdi-google" href="#"></a><a class="icon icon-sm icon-creative mdi mdi-linkedin" href="#"></a></div>
-                  </div>
-                </div>
-                <h5 class="profile-classic-title"><a href="#">Nathan Porter</a></h5>
-                <p class="profile-classic-position">CEO, Founder</p>
-              </article>
-            </div>
-            <div class="col-sm-6 col-md-5 col-lg-3 wow-outer">
-             
-              <article class="profile-classic wow slideInLeft" data-wow-delay=".05s">
-                <div class="profile-classic-main"><img class="profile-classic-image" src="images/team-2-270x273.jpg" alt="" width="270" height="273"/>
-                  <div class="profile-classic-caption">
-                    <div class="group group-xs group-middle profile-classic-group"><a class="icon icon-sm icon-creative mdi mdi-facebook" href="#"></a><a class="icon icon-sm icon-creative mdi mdi-twitter" href="#"></a><a class="icon icon-sm icon-creative mdi mdi-instagram" href="#"></a><a class="icon icon-sm icon-creative mdi mdi-google" href="#"></a><a class="icon icon-sm icon-creative mdi mdi-linkedin" href="#"></a></div>
-                  </div>
-                </div>
-                <h5 class="profile-classic-title"><a href="#">Jean Thompson</a></h5>
-                <p class="profile-classic-position">Project Manager</p>
-              </article>
-            </div>
-            <div class="col-sm-6 col-md-5 col-lg-3 wow-outer">
-              
-              <article class="profile-classic wow slideInLeft" data-wow-delay=".1s">
-                <div class="profile-classic-main"><img class="profile-classic-image" src="images/team-3-270x273.jpg" alt="" width="270" height="273"/>
-                  <div class="profile-classic-caption">
-                    <div class="group group-xs group-middle profile-classic-group"><a class="icon icon-sm icon-creative mdi mdi-facebook" href="#"></a><a class="icon icon-sm icon-creative mdi mdi-twitter" href="#"></a><a class="icon icon-sm icon-creative mdi mdi-instagram" href="#"></a><a class="icon icon-sm icon-creative mdi mdi-google" href="#"></a><a class="icon icon-sm icon-creative mdi mdi-linkedin" href="#"></a></div>
-                  </div>
-                </div>
-                <h5 class="profile-classic-title"><a href="#">Brian Payne</a></h5>
-                <p class="profile-classic-position">Manager</p>
-              </article>
-            </div>
-            <div class="col-sm-6 col-md-5 col-lg-3 wow-outer">
-             
-              <article class="profile-classic wow slideInLeft" data-wow-delay=".15s">
-                <div class="profile-classic-main"><img class="profile-classic-image" src="images/team-4-270x273.jpg" alt="" width="270" height="273"/>
-                  <div class="profile-classic-caption">
-                    <div class="group group-xs group-middle profile-classic-group"><a class="icon icon-sm icon-creative mdi mdi-facebook" href="#"></a><a class="icon icon-sm icon-creative mdi mdi-twitter" href="#"></a><a class="icon icon-sm icon-creative mdi mdi-instagram" href="#"></a><a class="icon icon-sm icon-creative mdi mdi-google" href="#"></a><a class="icon icon-sm icon-creative mdi mdi-linkedin" href="#"></a></div>
-                  </div>
-                </div>
-                <h5 class="profile-classic-title"><a href="#">Marie Fernandez</a></h5>
-                <p class="profile-classic-position">Marketing Manager</p>
-              </article>
-            </div>
-          </div>
-          <div class="wow-outer button-outer"><a class="button button-lg button-primary button-winona wow slideInUp" href="#">View all Team</a></div>
-        </div>
-      </section> -->
-      <!-- Careers-->
-      <!-- <section class="section section-lg bg-gray-100 text-center">
-        <div class="container">
-          <h3 class="wow-outer"><span class="wow slideInDown">Careers</span></h3>
-          <div class="row row-50">
-            <div class="col-md-6 col-lg-4 wow-outer">-->
-                    <!-- Career Classic-->
-                    <!-- <article class="career-classic wow slideInRight">
-                      <h4 class="career-classic-title"><a href="single-job.html">Customer Assistant</a></h4>
-                      <div class="career-classic-divider"></div>
-                      <ul class="career-classic-list">
-                        <li><span class="icon mdi mdi-calendar-clock"></span><span>Full Time</span></li>
-                        <li><span class="icon mdi mdi-map-marker"></span><span>San Diego</span></li>
-                      </ul>
-                      <p>Want to build your future with the biggest customer service provider in the US? Then apply for this job and become one of the CaseCraft customer care voices.</p>
-                    </article>
-            </div>
-            <div class="col-md-6 col-lg-4 wow-outer"> -->
-                    <!-- Career Classic-->
-                    <!-- <article class="career-classic wow slideInRight" data-wow-delay=".05s">
-                      <h4 class="career-classic-title"><a href="single-job.html">Customer Care Manager</a></h4>
-                      <div class="career-classic-divider"></div>
-                      <ul class="career-classic-list">
-                        <li><span class="icon mdi mdi-calendar-clock"></span><span>Full Time</span></li>
-                        <li><span class="icon mdi mdi-map-marker"></span><span>San Diego</span></li>
-                      </ul>
-                      <p>CaseCraft is looking for outstanding managers to work with Customer Care Agents whose role will be to answer questions and resolve customer issues.</p>
-                    </article>
-            </div>
-            <div class="col-md-6 col-lg-4 wow-outer"> -->
-                    <!-- Career Classic-->
-                    <!-- <article class="career-classic wow slideInRight" data-wow-delay=".1s">
-                      <h4 class="career-classic-title"><a href="single-job.html">Technical Support Agent</a></h4>
-                      <div class="career-classic-divider"></div>
-                      <ul class="career-classic-list">
-                        <li><span class="icon mdi mdi-calendar-clock"></span><span>Full Time</span></li>
-                        <li><span class="icon mdi mdi-map-marker"></span><span>San Diego</span></li>
-                      </ul>
-                      <p>We are looking for full-time Technical Support Representatives in San Diego, CA. Our team needs specialists who areready to improve the quality of customer care.</p>
-                    </article>
-            </div>
-          </div>
-          <div class="wow-outer button-outer"><a class="button button-lg button-primary button-winona wow slideInUp" href="careers.html">Join Us</a></div>
-        </div>
-      </section>  -->
-      <!-- Accordion & photo-->
-      <!-- <section class="section section-md">
-        <div class="container">
-          <div class="row row-50 justify-content-lg-between flex-lg-row-reverse offset-top-1">
-            <div class="col-lg-7 col-xl-6">
-              <h3 class="wow-outer"><span class="wow slideInDown">Frequently Asked Questions</span></h3> -->
-              <!-- Bootstrap collapse-->
-              <!-- <div class="card-group-custom card-group-corporate wow-outer" id="accordion2" role="tablist" aria-multiselectable="false"> -->
-                          <!--Bootstrap card-->
-                          <!-- <article class="card card-custom card-corporate wow fadeInDown" data-wow-delay=".05s">
-                            <div class="card-header" role="tab">
-                              <div class="card-title"><a id="accordion2-card-head-aiwwcate" data-toggle="collapse" data-parent="#accordion2" href="#accordion2-card-body-igmjumme" aria-controls="accordion2-card-body-igmjumme" aria-expanded="true" role="button">What are the advantages of purchasing a website template?
-                                  <div class="card-arrow"></div></a></div>
-                            </div>
-                            <div class="collapse show" id="accordion2-card-body-igmjumme" aria-labelledby="accordion2-card-head-aiwwcate" data-parent="#accordion2" role="tabpanel">
-                              <div class="card-body">
-                                <p>The major advantage is price: You get a high quality design for just $20-$70. You don’t have to hire a web designer or web design studio. Second advantage is time frame: It usually takes 5-15 days for a good designer to produce a web page of such quality.</p>
-                              </div>
-                            </div>
-                          </article> -->
-                          <!--Bootstrap card-->
-                          <!-- <article class="card card-custom card-corporate wow fadeInDown" data-wow-delay=".1s">
-                            <div class="card-header" role="tab">
-                              <div class="card-title"><a class="collapsed" id="accordion2-card-head-meyqfxcv" data-toggle="collapse" data-parent="#accordion2" href="#accordion2-card-body-iqdplnyx" aria-controls="accordion2-card-body-iqdplnyx" aria-expanded="false" role="button">Do you provide any scripts with your templates or could you do some custom programming?
-                                  <div class="card-arrow"></div></a></div>
-                            </div>
-                            <div class="collapse" id="accordion2-card-body-iqdplnyx" aria-labelledby="accordion2-card-head-meyqfxcv" data-parent="#accordion2" role="tabpanel">
-                              <div class="card-body">
-                                <p>Our templates do not include any additional scripts. Newsletter subscriptions, search fields, forums, image galleries (in HTML versions of Flash products) are inactive. Basic scripts can be easily added at www.zemez.io If you are not sure that the element you’re interested in is active please contact our Support Chat for clarification.</p>
-                              </div>
-                            </div>
-                          </article> -->
-                          <!--Bootstrap card-->
-                          <!-- <article class="card card-custom card-corporate wow fadeInDown" data-wow-delay=".15s">
-                            <div class="card-header" role="tab">
-                              <div class="card-title"><a class="collapsed" id="accordion2-card-head-olkesbww" data-toggle="collapse" data-parent="#accordion2" href="#accordion2-card-body-bmyiiwbf" aria-controls="accordion2-card-body-bmyiiwbf" aria-expanded="false" role="button">What do I receive when I order a template from Zemez?
-                                  <div class="card-arrow"></div></a></div>
-                            </div>
-                            <div class="collapse" id="accordion2-card-body-bmyiiwbf" aria-labelledby="accordion2-card-head-olkesbww" data-parent="#accordion2" role="tabpanel">
-                              <div class="card-body">
-                                <p>After you complete the payment via our secure form you will receive the instructions for downloading the product. The source files in the download package can vary based on the type of the product you have purchased.</p>
-                              </div>
-                            </div>
-                          </article> -->
-                          <!-- Bootstrap card
-                          <article class="card card-custom card-corporate wow fadeInDown" data-wow-delay=".2s">
-                            <div class="card-header" role="tab">
-                              <div class="card-title"><a class="collapsed" id="accordion2-card-head-slqgrxwe" data-toggle="collapse" data-parent="#accordion2" href="#accordion2-card-body-tiihhkff" aria-controls="accordion2-card-body-tiihhkff" aria-expanded="false" role="button">In what formats are your templates available?
-                                  <div class="card-arrow"></div></a></div>
-                            </div>
-                            <div class="collapse" id="accordion2-card-body-tiihhkff" aria-labelledby="accordion2-card-head-slqgrxwe" data-parent="#accordion2" role="tabpanel">
-                              <div class="card-body">
-                                <p>Website templates are available in Photoshop and HTML formats. Fonts are included with the Photoshop file. In most templates, HTML is compatible with Adobe® Dreamweaver® and Microsoft® FrontPage®.</p>
-                              </div>
-                            </div>
-                          </article>
-              </div>
-            </div>
-            <div class="col-lg-5 wow-outer"><img class="wow slideInLeft" src="images/accordions-1-470x368.jpg" alt="" width="470" height="368"/>
-            </div>
-          </div>
-        </div>
-      </section> -->
+      
       <!-- Wide CTA-->
       <section class="section section-md bg-primary-darker text-center">
         <div class="container">
@@ -594,28 +360,8 @@
         </div>
       </section>
       <!-- Partners-->
-      <!-- <section class="section section-sm text-center">
-        <div class="container"> -->
-          <!-- Owl Carousel-->
-          <!-- <div class="owl-carousel owl-carousel-1" data-items="2" data-sm-items="3" data-md-items="4" data-lg-items="5" data-dots="true" data-nav="false" data-stage-padding="0" data-loop="true" data-margin="30" data-mouse-drag="false">
-            <div class="item wow-outer">
-              <div class="wow slideInLeft"><a class="link-image" href="#"><img src="images/logo-john-brad-135x87.png" alt="" width="135" height="87"/></a></div>
-            </div>
-            <div class="item wow-outer">
-              <div class="wow slideInLeft" data-wow-delay=".05s"><a class="link-image" href="#"><img src="images/logo-the-oldbrand-134x104.png" alt="" width="134" height="104"/></a></div>
-            </div>
-            <div class="item wow-outer">
-              <div class="wow slideInLeft" data-wow-delay=".1s"><a class="link-image" href="#"><img src="images/logo-havana-cabana-132x87.png" alt="" width="132" height="87"/></a></div>
-            </div>
-            <div class="item wow-outer">
-              <div class="wow slideInLeft" data-wow-delay=".15s"><a class="link-image" href="#"><img src="images/logo-brownie-143x85.png" alt="" width="143" height="85"/></a></div>
-            </div>
-            <div class="item wow-outer">
-              <div class="wow slideInLeft" data-wow-delay=".2s"><a class="link-image" href="#"><img src="images/logo-hillplan-111x85.png" alt="" width="111" height="85"/></a></div>
-            </div>
-          </div>
-        </div>
-      </section> -->
+    
+      
       <!-- Map & contact information-->
       <section class="section bg-gray-100">
         <div class="range justify-content-sm-between flex-sm-row-reverse">
@@ -654,8 +400,18 @@
             <div class="row row-50">
               <div class="col-lg-4">
                 <div class="inset-right-1">
-                  <h4>About Us</h4>
-                  <p>We Vrundavan Infra Solutions LLP providing the best and secure mode of payment transfer system for players and stakeholders including infrastructure and real estate companies, contractors, consultants, bank, rental agencies, brokers SMEs and individual business owners.</p>
+                  <div class="row">
+                    <div class="inset-right-1">
+                      <img src="../static/Images/logo.png" alt="logo" height="200" width="200">
+                    </div>
+                </div>
+                <div class="row">
+                    <i class="fa fa-2x fa-facebook-official social-icons" aria-hidden="true"></i>
+                    <i class="fa fa-2x fa-twitter-square social-icons" aria-hidden="true"></i>
+                    <i class="fa fa-2x fa-instagram social-icons" aria-hidden="true"></i>
+                    <i class="fa fa-2x fa-linkedin-square social-icons" aria-hidden="true"></i>
+                </div>
+                  
                 </div>
               </div>
               <div class="col-sm-5 col-lg-4">

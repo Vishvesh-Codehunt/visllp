@@ -14,5 +14,13 @@ def services():
 def contact():
     return render_template("contact.html")
 
+@app.route("/equipment-finance")
+def equipment():
+    return render_template("equipment.html")
+
+@app.route("/vehicle-finance")
+def vehicle():
+    return render_template("vehicle.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
