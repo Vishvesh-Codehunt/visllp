@@ -29,6 +29,16 @@
 h3{
     font-size:25px;
 }
+@media only screen and (max-width: 600px){
+  .footer-logo{
+    text-align:center;
+    margin-left:30%;
+  }
+  .footer-links{
+    text-align:center;
+    margin-left:20%;
+  }
+}
   </style>
   </head>
   <body>
@@ -53,13 +63,14 @@ h3{
                 <!-- RD Navbar Panel-->
                 <div class="rd-navbar-panel">
                   <!-- RD Navbar Toggle-->
-                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  
                   <!-- RD Navbar Brand--><a class="rd-navbar-brand" href="{{url_for('home')}}"><img src="../static/Images/logo.png" alt="" width="80" height="18"/></a>
+                  <button class="rd-navbar-toggle ml-auto" data-rd-navbar-toggle="#rd-navbar-nav-wrap"><span></span></button>
                 </div>
                 <div class="rd-navbar-main-element">
                   <div class="rd-navbar-nav-wrap">
                     <ul class="rd-navbar-nav">
-                      <li class="rd-nav-item active"><a class="rd-nav-link" href="{{url_for('home')}}" style="color:#0058ab;">Home</a>
+                      <li class="rd-nav-item "><a class="rd-nav-link" href="{{url_for('home')}}" style="color:#0058ab;">Home</a>
                        
                       </li>
                       
@@ -68,7 +79,7 @@ h3{
                       </li>
                       <li class="rd-nav-item"><a class="rd-nav-link" href="{{url_for('equipment')}}" style="color:#0058ab;">Equipment Finance</a>
                       </li>
-                      <li class="rd-nav-item active"><a class="rd-nav-link" href="{{url_for('vehicle')}}"  style="color:#0058ab;">Vehicle Finance</a>
+                      <li class="rd-nav-item "><a class="rd-nav-link" href="{{url_for('vehicle')}}"  style="color:#0058ab;">Vehicle Finance</a>
                       </li>
                       
                       <li class="rd-nav-item"><a class="rd-nav-link" href="{{url_for('contact')}}" style="color:gray;">Contact Us</a>
@@ -205,15 +216,16 @@ h3{
                 <div class="inset-right-1">
                   <div class="row">
                     <div class="inset-right-1">
-                      <img src="../static/Images/logo.png" alt="logo" height="200" width="200">
+                      <img src="../static/Images/logo.png" class="footer-logo" alt="logo" height="200" width="200">
                     </div>
                 </div>
-                <div class="row">
+                <div class="row footer-links" >
                     <i class="fa fa-2x fa-facebook-official social-icons" aria-hidden="true"></i>
                     <i class="fa fa-2x fa-twitter-square social-icons" aria-hidden="true"></i>
                     <i class="fa fa-2x fa-instagram social-icons" aria-hidden="true"></i>
                     <i class="fa fa-2x fa-linkedin-square social-icons" aria-hidden="true"></i>
                 </div>
+                  
                 </div>
               </div>
               <div class="col-sm-5 col-lg-4">
@@ -237,7 +249,7 @@ h3{
                     <label class="form-label" for="subscribe-form-4-email">E-mail</label>
                   </div>
                   <div class="form-button">
-                    <button class="button button-primary button-icon button-icon-only button-winona" type="submit" aria-label="submit"><span class="icon mdi mdi-email-outline"></span></button>
+                    <button class="button button-primary button-icon button-icon-only button-winona" type="submit" aria-label="submit"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
                   </div>
                 </form>
               </div>
@@ -245,9 +257,9 @@ h3{
           </div>
         </div>
         <div class="container">
-          <div class="footer-standard-aside"><a class="brand" href="{{url_for('home')}}"><img src="../static/Images/logo.png" alt="" width="140" height="22"/></a>
+          <div class="footer-standard-aside">
             <!-- Rights-->
-            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>All Rights Reserved.</span><span>&nbsp;</span><br class="d-sm-none"/><a href="#">Privacy Policy</a></p>
+            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>All Rights Reserved.</span><span>&nbsp;</span><br class="d-sm-none"/><a href="privacy-policy.html">Privacy Policy</a></p>
           </div>
         </div>
       </footer>
