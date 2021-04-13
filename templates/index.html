@@ -88,7 +88,10 @@
 }
 .parallax-container{
   position:relative;
-  bottom:50px;
+  bottom:20px;
+}
+.home-img{
+  margin-top:7%;
 }
 
     </style>
@@ -116,7 +119,7 @@
                 <div class="rd-navbar-panel">
                   <!-- RD Navbar Toggle-->
                   
-                  <!-- RD Navbar Brand--><a class="rd-navbar-brand" href="index.html"><img src="../static/Images/logo.png" alt="" width="80" height="18"/></a>
+                  <!-- RD Navbar Brand--><a class="rd-navbar-brand" href="index.html"><img src="../static/Images/logo.png" alt="" width="80" height="25"/></a>
                   <button class="rd-navbar-toggle ml-auto" data-rd-navbar-toggle="#rd-navbar-nav-wrap"><span></span></button>
                 </div>
                 <div class="rd-navbar-main-element">
@@ -150,7 +153,7 @@
             <div class="jumbotron-classic-inner">
               <div class="container">
                 <div class="row">
-                  <div class="col-md-6 col-sm-12 col-lg-6">
+                  <div class="col-md-6 col-sm-12 col-lg-6" data-aos="fade-right">
                     <div class="jumbotron-classic-content">
                       
                       <h1 class="font-weight-bold wow-outer"><span class="wow slideInDown" data-wow-delay=".2s" style="color:#0058ab;">The Value Creators</span></h1>
@@ -171,8 +174,8 @@
                       <div class="wow-outer button-outer" ><a style="background-color:#0058ab;border:1px solid #0058ab;" class="button button-lg button-primary button-winona wow slideInDown" href="{{url_for('services')}}" data-wow-delay=".4s">View all Services</a></div>
                     </div>
                   </div>
-                  <div class="col-md-6 col-sm-12 col-lg-6">
-                    <!-- <img src="../static/Images/home.png" alt="home" style="margin-top:160px;height:800px;width:12000px;"> -->
+                  <div class="col-md-6 col-sm-12 col-lg-6 home-img" data-aos="fade-right">
+                    <img src="../static/Images/home.jpg" alt="home">
                   </div>
                 </div>
                 
@@ -470,7 +473,7 @@
                     <label class="form-label" for="subscribe-form-4-email">E-mail</label>
                   </div>
                   <div class="form-button">
-                    <button class="button button-primary button-icon button-icon-only button-winona" type="submit" aria-label="submit"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                    <button class="button button-primary button-icon button-icon-only button-winona" type="submit" aria-label="submit"><i style="font-size: 20px;" class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
                   </div>
                 </form>
               </div>

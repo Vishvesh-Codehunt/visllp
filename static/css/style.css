@@ -18588,7 +18588,7 @@ a[href*='tel'], a[href*='mailto'] {
 }
 
 .box-creative:hover .box-creative-icon {
-	color: #fff;
+	/* color: #fff; */
 }
 
 .box-creative:hover .box-creative-icon::after {
@@ -18598,7 +18598,7 @@ a[href*='tel'], a[href*='mailto'] {
 }
 
 .box-creative-shadow .box-creative-icon {
-	background: #fff;
+	
 	border: 0;
 	box-shadow: 0 17px 24px 0 rgba(0, 0, 0, 0.05);
 }
@@ -18611,7 +18611,7 @@ a[href*='tel'], a[href*='mailto'] {
 	justify-content: center;
 	width: 2.8em;
 	height: 2.8em;
-	border: 2px solid #e8e9ee;
+	
 	border-radius: 50%;
 	font-size: 24px;
 	line-height: 1;
@@ -18632,8 +18632,6 @@ a[href*='tel'], a[href*='mailto'] {
 	left: 0;
 	z-index: -1;
 	border-radius: inherit;
-	background: #4854ed;
-	border-color: #4854ed;
 	pointer-events: none;
 	opacity: 0;
 	visibility: hidden;
