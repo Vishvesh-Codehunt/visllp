@@ -90,10 +90,13 @@
   position:relative;
   bottom:20px;
 }
+
 .home-img{
   margin-top:7%;
 }
-
+.data-text{
+  margin-left:30%;
+}
     </style>
   </head>
   <body>
@@ -148,15 +151,19 @@
           </nav>
         </div>
       </header>
-        <div class="parallax-container"  style="background-color:white;">
+     
+      
+        <div class="parallax-container">
           <div class="parallax-content">
+            <section class="breadcrumbs-custom bg-image context-dark" style="background-image: url(../static/Images/home.jpg);">
             <div class="jumbotron-classic-inner">
+              
               <div class="container">
                 <div class="row">
-                  <div class="col-md-6 col-sm-12 col-lg-6" data-aos="fade-right">
+                  <div class="col-md-6 col-sm-12 col-lg-6 data-text" data-aos="fade-right">
                     <div class="jumbotron-classic-content">
                       
-                      <h1 class="font-weight-bold wow-outer"><span class="wow slideInDown" data-wow-delay=".2s" style="color:#0058ab;">The Value Creators</span></h1>
+                      <h1 class="font-weight-bold wow-outer"><span class="wow slideInDown" data-wow-delay=".2s" style="color:#0058ab;width:100%;">The Value Creators</span></h1>
                       <p class="big wow-outer"><span class="wow slideInDown" data-wow-delay=".35s" style="color:#0058ab;">We help you to get a quick loan on used and pre-owned Construction Equipment & Commercial Vehicle for your short terms need of funds:.</span></p>
                       <ul style="margin-top:20px;">
                         <li>
@@ -174,9 +181,9 @@
                       <div class="wow-outer button-outer" ><a style="background-color:#0058ab;border:1px solid #0058ab;" class="button button-lg button-primary button-winona wow slideInDown" href="{{url_for('services')}}" data-wow-delay=".4s">View all Services</a></div>
                     </div>
                   </div>
-                  <div class="col-md-6 col-sm-12 col-lg-6 home-img" data-aos="fade-right">
+                  <!-- <div class="col-md-6 col-sm-12 col-lg-6 home-img" data-aos="fade-right">
                     <img src="../static/Images/home.jpg" alt="home">
-                  </div>
+                  </div> -->
                 </div>
                 
               </div>
@@ -184,6 +191,8 @@
           </div>
         </div>
       </section>
+      
+  
       <!-- Services-->
       <section class="section section-lg bg-gray-100 text-center">
         <div class="container-fluid"> 
