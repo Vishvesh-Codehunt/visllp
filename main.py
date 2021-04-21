@@ -22,5 +22,9 @@ def equipment():
 def vehicle():
     return render_template("vehicle.html")
 
+@app.route("/leaders")
+def team():
+    return render_template("team.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
