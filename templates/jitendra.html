@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
   <head>
-    <title>VIS LLP</title>
+    <title>Jitendra Varyani</title>
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width height=device-height initial-scale=1.0 maximum-scale=1.0 user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -117,12 +117,6 @@
   width:400px;
   margin-bottom:20px;
 }
-.profile:hover{
-  -ms-transform: scale(1.1); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
-  transform: scale(1.1); 
-  transition: 0.4s;
-}
 .leader-name{
   text-align:center;
   margin-top:10px;
@@ -140,12 +134,23 @@
   color:white;
   font-size:20px;
 }
+.description{
+    font-size:17px;
+    margin-top:20px;
+}
+.squad-img:hover{
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+  transition: 0.4s;
+}
+
     </style>
   </head>
   <body>
     <!-- <div class="ie-panel"><a href="https://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div> -->
     <div class="preloader">
-      <div class="preloader-logo"><img src="../static/Images/logo.png" alt="" width="260" height="50"/>
+      <div class="preloader-logo"><img src="../static/Images/logo.png" class="service-photos" alt="" width="260" height="50"/>
       </div>
       <div class="preloader-body">
         <div id="loadingProgressG">
@@ -198,91 +203,23 @@
         </div>
       </header>
 
-      <section class="breadcrumbs-custom bg-image context-dark" style="background-image: url(../static/Images/team.jpg);">
-        <div class="breadcrumbs-custom-inner">
-          <div class="breadcrumbs-custom-container container">
-            <div class="breadcrumbs-custom-main">
-              <h6 class="breadcrumbs-custom-subtitle title-decorated" style="color:#0058ab;font-weight:500;">Our Team</h6>
-              <h1 class="breadcrumbs-custom-title" style="color:#0058ab;font-weight:600;">Our Team</h1>
-            </div>
-            <ul class="breadcrumbs-custom-path">
-              <li><a href="{{url_for('home')}}" style="color:#0058ab;font-weight:600;">Home</a></li>
-              <li class="active" style="color:#0058ab;font-weight:600;">Our Team</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
       <div class="container">
-        <div class="row">
-          <div class="col-md-2 col-sm-12 col-lg-2">
-
+          <div class="row">
+              <div class="col-md-5 col-sm-12 col-lg-5">
+                <img class="squad-img" src="../static/Images/profile.jpg" class="service-photos" alt="Jitendra Varyani" data-aos="fade-right">
+              </div>
+              <div class="col-md-6 col-sm-12 col-lg-6">
+                <p class="description" data-aos="fade-right">
+                    Heading business of Kutch area, based at Gandhidham. Jitendra is having
+                    a rich experience of over 22 years, He has worked with the prominent financiers like Centurion
+                    Bank. ICICI Bank, Hinduja Leyland Finance.
+                </p>
+              </div>
           </div>
-          <div class="col-md-8 col-sm-12 col-lg-8" data-aos="fade-right">
-            <p class="main-header">
-              The people who work at Vrundavan share the vision and values of our community.
-            </p>
-            <p class="second-content">
-              We’re driven by the idea that the best work is born from diligence, craftsmanship and fun.
-            </p>
-          </div>
-          <div class="col-md-2 col-sm-12 col-lg-2">
-            
-          </div>
-        </div>
       </div>
-
-      <section class="leader-container">
-      <div class="container">
-        <h3 style="text-align:center;padding-top:30px; color:white;" data-aos="fade-right">Leadership</h3>
-        <div class="row">
-          <div class="col-md-4 col-sm-12 col-lg-4 mx-auto" style="text-align:center;" data-aos="fade-right">
-            <img src="../static/Images/profile.jpg" alt="profile" class="profile">
-            <a href="{{url_for('nitin')}}"  class="leader-name">Nitin Bhatia</a>
-            <p class="leader-p">Chief Executive Officer</p>
-          </div>
-          <div class="col-md-4 col-sm-12 col-lg-4" style="text-align:center;" data-aos="fade-right">
-            <img src="../static/Images/profile.jpg" alt="profile" class="profile">
-            <a href="{{url_for('amit')}}" class="leader-name">Amit Desai</a>
-            <p class="leader-p">Financial Officer</p>
-          </div>
-          <div class="col-md-4 col-sm-12 col-lg-4" style="text-align:center;" data-aos="fade-right">
-            <img src="../static/Images/profile.jpg" alt="profile" class="profile">
-            <a href="{{url_for('brijesh')}}" class="leader-name">Brijesh Shah</a>
-            <p class="leader-p">Financial Officer</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <h3 style="text-align:center;padding-top:30px; color:white;" data-aos="fade-right">Business Squad</h3>
-        <div class="row">
-          <div class="col-md-4 col-sm-12 col-lg-4 mx-auto" style="text-align:center;" data-aos="fade-right">
-            <img src="../static/Images/profile.jpg" alt="profile" class="profile">
-            <a href="{{url_for('manoj')}}"  class="leader-name">Manoj Bharti</a>
-            <p class="leader-p">Chief Executive Officer</p>
-          </div>
-          <div class="col-md-4 col-sm-12 col-lg-4" style="text-align:center;" data-aos="fade-right">
-            <img src="../static/Images/profile.jpg" alt="profile" class="profile">
-            <a href="{{url_for('shivendra')}}" class="leader-name">Shivendra Chouhan</a>
-            <p class="leader-p">Chief Executive Officer</p>
-          </div>
-          <div class="col-md-4 col-sm-12 col-lg-4" style="text-align:center;" data-aos="fade-right">
-            <img src="../static/Images/profile.jpg" alt="profile" class="profile">
-            <a href="{{url_for('raxit')}}" class="leader-name">Raxit Chhaya</a>
-            <p class="leader-p">Chief Executive Officer</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-12 col-lg-4 mx-auto" style="text-align:center;" data-aos="fade-right">
-            <img src="../static/Images/profile.jpg" alt="profile" class="profile">
-            <a href="{{url_for('jitendra')}}"  class="leader-name">Jitendra Varyani</a>
-            <p class="leader-p">Chief Executive Officer</p>
-        </div>
-      </div>
-    </section>
-
-       <!-- Page Footer-->
+      
+      
+      <!-- Page Footer-->
        <footer class="section footer-standard bg-gray-700">
         <div class="footer-standard-main">
           <div class="container">

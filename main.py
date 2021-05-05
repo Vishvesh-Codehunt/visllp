@@ -26,5 +26,34 @@ def vehicle():
 def team():
     return render_template("team.html")
 
+@app.route("/leaders/nitin-bhatia")
+def nitin():
+    return render_template("nitinbhatia.html")
+
+@app.route("/leaders/amit-desai")
+def amit():
+    return render_template("amit.html")
+
+@app.route("/leaders/brijesh-shah")
+def brijesh():
+    return render_template("brijesh.html")
+
+@app.route("/leaders/manoj-bharti")
+def manoj():
+    return render_template("manoj.html")
+
+@app.route("/leaders/shivendra-chouhan")
+def shivendra():
+    return render_template("shivendra.html")
+
+@app.route("/leaders/raxit-chhaya")
+def raxit():
+    return render_template("raxit.html")
+
+@app.route("/leaders/jitendra-varyani")
+def jitendra():
+    return render_template("jitendra.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True)
