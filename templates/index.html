@@ -14,92 +14,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../static/css/style.css" id="main-styles-link">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../static/css/mystyle.css">
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}
-    .help-img:hover {
-  -ms-transform: scale(1.1); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
-  transform: scale(1.1); 
-  transition: 0.4s;
-}
-.verticalLine {
-        border-left: thick solid #0058ab;
-}
-  .hdfc{
-    margin-top:20%;
-  }
-  .social-icons:hover{
-    color:#0058ab;
-}
-
-  .social-icons{
-    font-size:40px;
-    color:white;
-    margin-right:20px;
-}
-.quick-loan{
-  margin-top:150px;
-}
-
-@media only screen and (max-width: 600px){
-  .box-cta-1{
-    text-align:left;
-  }
-  .wow-btn{
-    position: relative;
-    left:0px;
-  }
-  .wow-outer{
-    text-align:left;
-  }
-  .bank-img{
-    margin-top:0px;
-  }
-  .help-img{
-    margin-top:20px;
-    margin-bottom:20px;
-  }
-  .quick-loan{
-    margin-top:50px;
-  }
-  .bank-img{
-    height:170px;
-    width:200px;
-  }
-  .bank-title{
-    text-align:center;
-  }
-  .bank-content{
-    margin-left:20px;
-    margin-right:20px;
-  }
-  .hdfc{
-    margin-top:20px;
-  }
-  .footer-logo{
-    text-align:center;
-    margin-left:30%;
-  }
-  .footer-links{
-    text-align:center;
-    margin-left:20%;
-  }
-  .parallax-container{
-  position:relative;
-  top:10px;
-}
   
-}
-.parallax-container{
-  position:relative;
-  bottom:20px;
-}
-
-.home-img{
-  margin-top:7%;
-}
-.data-text{
-  margin-left:7%;
-}
     </style>
   </head>
   <body>
@@ -190,11 +107,19 @@
                   <!-- <div class="col-md-6 col-sm-12 col-lg-6 home-img" data-aos="fade-right">
                     <img src="../static/Images/home.jpg" alt="home">
                   </div> -->
+                  
                 </div>
                 
               </div>
+              <div class="custom-shape-divider-bottom-1621936484">
+                <svg  data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
             </div>
+            </div>
+            
           </div>
+          
         </div>
       </div>
         </div>
@@ -246,7 +171,7 @@
         </div>
       </section>
 
-      <div class="container quick-loan" >
+      <!-- <div class="container quick-loan" >
         <div class="row mt-5">
           <div class="col-sm-12 col-lg-3 col-md-3" data-aos="fade-right">
             <p>WE HELP YOU IN BETTER WAY</p>
@@ -270,7 +195,8 @@
           </div>
           </div>
         </div>
-      </div>
+      </div> -->
+      
       <!-- Pricing-->
       <section id="clients">
         <div class="container" style="margin-top:80px;">
@@ -541,12 +467,19 @@
       <!-- Testimonials & Video-->
       
       <!-- Wide CTA-->
-      <section class="section section-md bg-primary-darker text-center">
+      <section  style="background-color:#846add; margin-top:40px;">
+        <svg style="fill:white;" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
+      </svg>
         <div class="container">
           <div class="box-cta-1" data-aos="fade-right">
-            <h3 class="wow-outer"><span class="wow slideInRight">Register with us to unlock money for your
+            <h3 class="wow-outer" style="color:white;"><span class="wow slideInRight">Register with us to unlock money for your
               <span class="font-weight-bold">infrastructure expenditure</span></span></h3>
-            <div class="wow-outer wow-btn button-outer"><a class="button button-lg button-primary button-winona wow slideInLeft" href="{{url_for('contact')}}">Contact Us Now!</a></div>
+            
+              <div class="sub-btn" style="text-align:center;">
+                <a href="{{url_for('contact')}}"><button type="submit" class="btn btn-lg btn-subscribe" style="margin-bottom:80px;"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>    CONTACT US NOW</button></a>
+              </div>
+           
           </div>
         </div>
       </section>
@@ -585,7 +518,7 @@
         </div>
       </section>
       <!-- Page Footer-->
-      <footer class="section footer-standard bg-gray-700">
+      <!-- <footer class="section footer-standard bg-gray-700">
         <div class="footer-standard-main">
           <div class="container">
             <div class="row row-50">
@@ -619,7 +552,7 @@
               <div class="col-sm-7 col-lg-4" data-aos="fade-right">
                 <h4>Newsletter</h4>
                 <p>Sign up to our newsletter and be the first to know about the latest news, special offers, events, and discounts.</p>
-                <!-- RD Mailform-->
+             
                 <form class="rd-form rd-mailform form-inline" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
                   <div class="form-wrap">
                     <input class="form-input" id="subscribe-form-4-email" type="email" name="email" data-constraints="@Required @Email">
@@ -635,11 +568,108 @@
         </div>
         <div class="container">
           <div class="footer-standard-aside">
-            <!-- Rights-->
+            
             <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>All Rights Reserved.</span><span>&nbsp;</span><br class="d-sm-none"/><a href="privacy-policy.html">Privacy Policy</a></p>
           </div>
         </div>
-      </footer>
+      </footer> -->
+      <section id="subscribe">
+        <svg style="fill:white;" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
+      </svg>
+        <div class="container">
+          <div class="row">
+          <div class="col-md-12 col-lg-1 col-sm-12" style="text-align:center;" data-aos="fade-right">
+            <img src="../static/Images/email.png" alt="email" class="email-icon">
+          </div>
+          <div class="col-md-12 col-lg-6 col-sm-12" data-aos="fade-right">
+            <p class="subscribe-p">	
+              Subscribe to our newsletter and stay up to date with all events coming straight:</p>
+          </div>
+          <div class="col-md-12 col-lg-5 col-sm-12" data-aos="fade-right">
+            <form  method="POST">
+              <div class="form-group">
+               
+                  <input type="email" name="email" class="form-control form-control-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=" Your E-mail Address" required autocomplete="off">
+                  <div class="sub-btn">
+                    <button type="submit" class="btn btn-lg btn-subscribe"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>    Subscribe</button>
+                  </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      </section>
+      <section id="footer">
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-sm-12 col-lg-3 footer-devider-1s1" data-aos="fade-right">
+                <div style="text-align:center;">
+                  <img src="../static/Images/logo.png" alt="logo" height="200" width="200"> 
+                </div>
+                <!-- <img src="../static/Images/logo.png" class="footer-logo" alt="logo" > -->
+                <p class="footer-p">
+                  We help you to get a quick loan on used and pre-owned Construction Equipment & Commercial Vehicle for your short terms need of funds
+                </p>
+              </div>
+              <div class="col-md-6 col-sm-12 col-lg-3 footer-devider-2s1 footer-2" data-aos="fade-right">
+                <h3 class="footer-header">Contacts</h3>
+                <div style="margin-top:30px;">
+                  <i style="color:aquamarine;" class="fa fa-map-marker" aria-hidden="true"></i> <span style="margin-left:10px;font-size:14px;">A/802-B, West Gate, YMCA Club, S.G. Highway, GJ 380054 IN.
+                    VRUNDAVAN INFRASOLUTIONS LLP </span>
+                  <hr style="border:1px solid white; margin-top:30px;margin-bottom:30px;">
+                  <span><i style="color:aquamarine;" class="fa fa-phone" aria-hidden="true"></i><span style="margin-left:10px;">Phone: +800 49 900 900</span></span><br>
+                  <span><i style="color:aquamarine;" class="fa fa-envelope-o" aria-hidden="true"></i><span style="margin-left:10px;">Email: info@visllp.com</span></span><br>
+                  <span><i style="color:aquamarine;" class="fa fa-globe" aria-hidden="true"></i><span style="margin-left:10px;">Website: visllp.com</span></span>
+              </div>
+              </div>
+              <div class="col-md-5 col-sm-12 col-lg-2 footer-devider-3s1 footer-devider-3" data-aos="fade-right">
+                <h3 class="footer-header">Useful Links</h3>
+                <ul class="footer-ul">
+                  <li><a href="{{url_for('home')}}" style="color:white;">Home</a></li>
+                  <li><a href="{{url_for('services')}}" style="color:white;">Services</a></li>
+                  <li><a href="{{url_for('equipment')}}" style="color:white;">Equipment Finance</a></li>
+                  <li><a href="{{url_for('vehicle')}}" style="color:white;">Vehicle Finance</a></li>
+                  <li><a href="{{url_for('team')}}" style="color:white;">Our Team</a></li>
+                  <li><a href="{{url_for('contact')}}" style="color:white;">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-sm-12 col-lg-3 footer-devider-4s1 footer-devider-3" data-aos="fade-right">
+                <h3 class="footer-header">Newslatter</h3>
+                <p class="footer-3-p">Subscribe to our newsletter and stay up to date with all events coming straight in your mailbox:</p>
+                <form  method="POST" style="margin-top:30px;">
+                  <div class="form-group">
+                    
+                      <input type="email" name="email" class="form-control form-control-footer" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=" Your E-mail Address"  required autocomplete="off">
+                      <button type="submit" class="btn btn-lg btn-subscribe-footer"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>    Subscribe</button>
+                     
+                  
+                  </div>
+                </form>
+              </div>
+            </div>
+      
+            <div class="row second-footer-row">
+              <div class="col-md-5 col-sm-12 col-lg-5 copyright" style="text-align:center;">
+                <p>Copyright © Rainbow 2021. All rights reserved.</p>
+              </div>
+              <div class="col-md-3 col-sm-12 col-lg-3">
+                
+              </div>
+              <div class="col-md-4 col-sm-12 col-lg-4 social-icons" style="text-align:center;">
+                <a href="#"><i class="fa social-icon fa-2x fa-twitter-square" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa social-icon fa-2x fa-facebook-official" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa social-icon fa-2x fa-linkedin-square" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa social-icon fa-2x fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa social-icon fa-2x fa-telegram" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+      
+        </footer>
+      </section>
+      
     </div>
     <!-- Global Mailform Output-->
     <div class="snackbars" id="form-output-global"></div>
