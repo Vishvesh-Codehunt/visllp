@@ -143,9 +143,15 @@ footer */
     position:relative;
     right:12px;
 }
+.manoj-bharti{
+    margin-top:60px;
+}
 @media only screen and (max-width: 900px) {
 	.footer-devider-3s1{
         margin-left:10px;
+    }
+    .manoj-bharti{
+        margin-top:0px;
     }
 }
 @media only screen and (max-width: 600px) {
